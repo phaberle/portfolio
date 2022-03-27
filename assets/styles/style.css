@@ -9,6 +9,8 @@
     --colorB: #d39240;
     --colorC: #b07c40;
     --colorD: #917631;
+    --colorE: #fff;
+    --pageWidth: 900px;
 }
 
 body {
@@ -20,7 +22,7 @@ body {
 /* HEADER */
 
 header {
-    width: 900px;
+    width: var(--pageWidth);
     background-color: var(--colorB);
     display: flex;
     align-items: center;
@@ -29,7 +31,7 @@ header {
 }
 
 header .nameplate {
-    width: 250px;
+    width: 195px;
     background-color: var(--colorA);
 }
 
@@ -38,11 +40,7 @@ header .nameplate span {
     justify-content: right;
     margin-right: 15px;
     color: white;
-    font-size: 38px;
-}
-
-header nav {
-    margin-right: 25px;
+    font-size: 40px;
 }
 
 header nav ul {
@@ -51,10 +49,61 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    font-size: 14px;
-    width: 250px;
+    font-size: 18px;
+    width: 350px;
+    margin-right: 20px;
 }
 
 header nav ul li {
     border-bottom: 2px var(--colorD) solid;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul li a:hover {
+    color: var(--colorE);
+}
+
+.headerimg {
+    width: var(--pageWidth);
+    background-image: url(../images/IMG_0671_cropped.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-basis;
+}
+
+.headerimg span {
+    background-color: var(--colorA);
+    color: white;
+    font-size: 24px;
+    height: 40px;
+    padding: 5px;
+    position: relative;
+    right: 20px;
+    top: 100px;
+}
+
+
+/* CONTENT SECTION */
+
+.aboutMe {
+    width: var(--pageWidth);
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutMe .leftSide {
+    color: var(--colorA);
+    font-size: 40px;
+    display: flex;
+    justify-content: flex-end;
+    border-right: 2px var(--colorA) solid;
+    padding: 10px;
+    margin: 10px;
 }
