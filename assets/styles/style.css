@@ -75,7 +75,7 @@ header nav ul li a:hover {
     height: 150px;
     display: flex;
     justify-content: flex-end;
-    align-content: flex-basis;
+    align-items: flex-end;
 }
 
 .headerimg span {
@@ -84,26 +84,59 @@ header nav ul li a:hover {
     font-size: 24px;
     height: 40px;
     padding: 5px;
-    position: relative;
-    right: 20px;
-    top: 100px;
+    margin-right: 15px;
+    margin-bottom: 10px;
 }
 
 
-/* CONTENT SECTION */
+/* ABOUT ME */
 
 .aboutMe {
     width: var(--pageWidth);
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
 
 .aboutMe .leftSide {
     color: var(--colorA);
     font-size: 40px;
+    margin-right: 10px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.aboutMe .rightSide {
+    border-left: 2px var(--colorA) solid;
+    padding-left: 10px;
+}
+
+
+/*END*/
+
+
+/* WORK */
+
+.work {
+    width: var(--pageWidth);
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.work .leftSide {
+    color: var(--colorA);
+    font-size: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    text-align: right;
     border-right: 2px var(--colorA) solid;
-    padding: 10px;
-    margin: 10px;
+    width: 15.3%;
+}
+
+.work .rightSide {
+    border: 4px solid var(--colorA);
+    height: 400px;
+    background: var(--colorD);
 }
