@@ -135,8 +135,26 @@ header nav ul li a:hover {
     width: 15.3%;
 }
 
-.work .rightSide {
+.rightSide_MidContent {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    justify-content: space-around;
+    /* border: 1px black solid; */
+}
+
+.rightSide_bigBox {
     border: 4px solid var(--colorA);
     height: 400px;
+    width: 100%;
     background: var(--colorD);
+    flex-basis: 1;
+}
+
+.miniBox {
+    border: 4px solid var(--colorA);
+    background: var(--colorD);
+    width: 350px;
+    height: 100px;
+    margin: 10px;
 }
