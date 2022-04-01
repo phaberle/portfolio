@@ -94,7 +94,7 @@ header nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-.main_container>*:nth-child(1) {
+.left_side_title {
     flex: 1 1 30%;
     gap: 1em;
     min-width: 8ch;
@@ -107,7 +107,7 @@ header nav ul li a:hover {
 .main_container>*:nth-child(2) {
     flex: 1 1 70%;
     gap: 1em;
-    max-width: 175ch;
+    max-width: 135ch;
 }
 
 
@@ -217,4 +217,28 @@ h2 {
 
 .main_container .contactMethods ul li a:hover {
     color: var(--colorD);
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:600px) {
+    .main_container {
+        flex-direction: column;
+    }
+    .left_side_title {
+        border: none;
+        min-width: none;
+        max-width: none;
+    }
+    h2 {
+        text-align: center;
+    }
+    .main_container>:nth-child(2) {
+        padding: 10px;
+    }
+    .box,
+    .work_grid .big_box {
+        width: 100%;
+    }
 }

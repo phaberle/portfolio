@@ -18,7 +18,7 @@
                 <li><a href=#aboutMe>About Me</a></li>
                 <li><a href="#work">Work</li>
                 <li><a href="#contactMe">Contact Me</li>
-                <li><a href="#resume">Resume</a></li>
+                <li id="resume"><a href="#resume">Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -26,7 +26,7 @@
         <span><strong>Rock Solid</strong></span>
     </div>
     <div class="main_container" id="aboutMe">
-        <section>
+        <section class="left_side_title">
             <h2>About<br> Me</h2>
         </section>
         <section>
@@ -35,17 +35,17 @@
                 Vitae quo tempora blanditiis placeat aliquam tenetur, libero explicabo ratione delectus voluptas. Ut aut, nemo quis temporibus, ab assumenda magnam explicabo at doloremque odit quo incidunt! Placeat sequi quisquam sapiente repudiandae</p>
             </br>
             <p>
-                nesciunt magnam dolore quasi eligendi cum itaque eos nisi libero facere, earum ab suscipit aspernatur commodi architecto quis voluptatem! Itaque vel quae vitae corporis asperiores pariatur ad? Ea ipsa ipsum exercitationem! Nam vero quis asperiores beatae
+                Nesciunt magnam dolore quasi eligendi cum itaque eos nisi libero facere, earum ab suscipit aspernatur commodi architecto quis voluptatem! Itaque vel quae vitae corporis asperiores pariatur ad? Ea ipsa ipsum exercitationem! Nam vero quis asperiores beatae
                 rem corporis facere, hic eos enim, libero explicabo et est officia dicta ipsa porro optio adipisci nobis quaerat ab minima iste sunt eum? Nesciunt neque impedit ut at autem eius ea quos, atque facere ex assumenda laboriosam tempora repellat.
                 Aut dignissimos illo porro ut quaerat laborum ipsum iure natus consequatur, et voluptatem, eaque enim atque consequuntur earum ad facere iusto explicabo assumenda aliquam. Expedita laudantium sit optio illum sunt quasi</p>
             </br>
             <p>
-                fugiat atque quidem, aliquid delectus cupiditate minus! Voluptate fuga, veniam quasi itaque earum unde, necessitatibus placeat natus accusantium tenetur sint inventore. Commodi, vitae similique vel maiores esse totam illo accusantium eaque pariatur aliquid
+                Fugiat atque quidem, aliquid delectus cupiditate minus! Voluptate fuga, veniam quasi itaque earum unde, necessitatibus placeat natus accusantium tenetur sint inventore. Commodi, vitae similique vel maiores esse totam illo accusantium eaque pariatur aliquid
                 id eum assumenda error, nemo quisquam officia excepturi? Molestias deserunt dolor, molestiae omnis expedita maiores accusamus illo, nulla numquam magnam neque quaerat!</p>
         </section>
     </div>
     <div class="main_container" id="work">
-        <section>
+        <section class="left_side_title">
             <h2>Work</h2>
         </section>
         <div class="work_grid">
@@ -68,7 +68,7 @@
     </div>
 
     <footer class="main_container" id="contactMe">
-        <section style="margin-bottom:30px">
+        <section class="left_side_title">
             <h2>Contact<br> Me</h2>
         </section>
         <section class="contactMethods">
@@ -80,6 +80,14 @@
         </section>
         </div>
     </footer>
+    <script>
+        document.getElementById("resume").addEventListener(
+            'click',
+            function() {
+                window.alert("Resume coming soon.");
+            }
+        )
+    </script>
 </body>
 
 </html>
