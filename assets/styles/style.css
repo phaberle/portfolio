@@ -142,25 +142,25 @@ header nav ul li a:hover {
 
 .work_grid>*:nth-child(2) {
     background-image: url("../images/DSCN0766.JPG");
-    background-size: 460px;
+    background-size: 55%;
     background-position: center;
 }
 
 .work_grid>*:nth-child(3) {
     background-image: url("../images/IMG_0508.JPG");
-    background-size: 460px;
+    background-size: 100%;
     background-position: center;
 }
 
 .work_grid>*:nth-child(4) {
     background-image: url("../images/IMG_0940.JPG");
-    background-size: 460px;
+    background-size: 100%;
     background-position: center;
 }
 
 .work_grid>*:nth-child(5) {
     background-image: url("../images/IMG_1083.JPG");
-    background-size: 460px;
+    background-size: 100%;
     background-position: right;
 }
 
@@ -173,11 +173,24 @@ h2 {
     width: 91.5%;
     height: 600px;
     border: 4px solid var(--colorA);
+    /* padding-bottom: 40%; */
 }
 
 .mini_box {
     /* width: 20%; */
     height: 260px;
+}
+
+.mini-caption {
+    border: 1px var(--colorD) solid;
+    background-color: var(--colorB);
+    color: black;
+    font-weight: bold;
+    height: 150px;
+    padding: 20px;
+    position: relative;
+    top: 85%;
+    left: 0;
 }
 
 
