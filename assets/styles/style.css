@@ -135,8 +135,9 @@ header nav ul li a:hover {
 }
 
 .work_grid>*:nth-child(1) {
-    background-image: url("../images/JacksonSquare.jpg");
-    background-size: 1300px;
+    background-image: url("../images/Hookup.png");
+    background-size: 600px;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
